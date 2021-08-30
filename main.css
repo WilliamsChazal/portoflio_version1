@@ -1,3 +1,11 @@
+:root{
+    --couleur-primaire:#202231;
+    --couleur-secondaire:#8C031A;
+    --couleur-tertiaire:#EDF2F4;
+    --couleur-degrade:linear-gradient(rgba(07,14,30, 0.5) rgba(217,4,21, 0.5));
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -36,14 +44,14 @@ body {
     display: none;
 }
 .one {
-    background: #b1f8f2;
+    background: var(--couleur-tertiaire);
 }
 .two {
-    background: #fffc99;
+    background: var(--couleur-primaire);
 }
 .three {
-    background: #eafdcf;
+    background: var(--couleur-tertiaire);
 }
 .four {
-    background: #8e8358;
+    background: var(--couleur-primaire);
 }
