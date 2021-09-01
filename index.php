@@ -1,26 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="main.css">
-    <title>WilliamsChazal</title>
-</head>
-<body>
-  
-<div class="container_front-page">
-
-<div class="blocHorizontal">
-    <div class="slide one">Slide 1</div>
-    <div class="slide two">Slide 2</div>
-    <div class="slide three">Slide 3</div>
-    <div class="slide four">Slide 4</div>
-</div>
-
-</div>
+<?php
+    require_once('admin/db-connect.php');
+    $_sql = 'SELECT * FROM `projets`';
+    $query = $db->prepare($_sql);
+    $query ->execute();
+    $result = $query->fetchALL(PDO::FETCH_ASSOC);
+?>
 
 
+<?php include ('header.php')?>
+<?php include ('includes/navbar/navbar.php')?>
+<section class="container_socials">
+<?php include ('includes/socials/socials.php')?>
+</section>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+            <section class='main'>
+                <span>
+            <?php include ('sections/landing/landing.php')?>
+            </span>
+            </section>
+            <section class="about-me" id="about-me_ancre">
+            <?php include ('sections/about-me/about-me.php')?>
+            </section>
+
+            <section >
+                <?php include ('sections/skills/skills.php')?></section>
+
+            <section class='portfolio' id="projet_ancre">
+            <?php include ('sections/projets/projets.php')?>
+            </section>
+
+            <section class='contact' id="contact_ancre">
+                <div class="contact_titre"><h3>Contactez moi</h3></div>
+        <!--         <div class="contact_texte"></div> -->
+                <div class="form">
+                <?php include ('includes/contact-form/index.php')?>
+                </div>
+            </section>
+
+    <?php include ('includes/footer/footer.php')?>
+    
+  <script src="scripts/main.js"></script>  
+  <script src="sections/projets/projets.js"></script>
 </body>
 </html>
+

@@ -1,0 +1,123 @@
+
+.about-me{
+  display: flex;
+  flex-direction: row;
+  padding: 60px;
+  background-color: var(--couleur-primaire_transparent);
+  color: var(--couleur-tertiaire);
+  font-family: 'Staatliches', cursive;
+  
+}
+
+.about_titre{
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-family: 'Staatliches', cursive;
+}
+
+.about{
+  margin-bottom: 30px;
+}
+.about_titre{
+  text-align: center;
+}
+.container_info {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+/* .about-me_cv{
+  display: flex;
+  align-items: flex-end
+  
+} */
+.image_info{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+.texte_info{
+  width: 50%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  line-height:2em;
+}
+.texte_info--paragraphe{
+  padding-top: 50px;
+}
+.portrait_info{
+  width: 400px;
+  border: solid 5px var(--couleur-tertiaire);
+}
+#cv_button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  background-color: var(--couleur-tertiaire);
+  color: var(--couleur-primaire_transparent);
+  width: 175px;
+  height: 40px;
+  border-radius: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 22px;
+  font-family: 'Staatliches', cursive;
+  outline: none; 
+}
+
+#cv_button:hover{
+  background-color: var(--couleur-secondaire);
+  color: white;
+  box-shadow: 5px 5px 2px 1px var(--couleur-tertiaire);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px){
+  .about-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--couleur-primaire_transparent);
+    color: var(--couleur-tertiaire);
+    text-align: justify;
+  }
+  .container_info{
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
+  .texte_info{
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    line-height:2em;
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+  .image_info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .portrait_info{
+    width: 300px;
+    border: solid 5px var(--couleur-tertiaire);
+  }
+  .about-me_cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+} 
+ 
+
+/* text-align: center;
+color: var(--couleur-secondaire);
+font-size: 28px;
+margin:20px 20px;
+text-decoration: underline; */

@@ -1,0 +1,108 @@
+:root{
+    --couleur-primaire_transparent:#202231;
+    --couleur-secondaire:#8C031A;
+    --couleur-tertiaire:#EDF2F4;
+    --couleur-degrade:linear-gradient(rgba(07,14,30, 0.5) rgba(217,4,21, 0.5));
+}
+
+/* *{
+  border: solid red 1px;
+} */
+
+html{
+  scroll-behavior: smooth;
+
+
+}
+a{
+  text-decoration: none;
+}
+
+
+.container_socials{
+  display: flex;
+  justify-content: flex-end;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  border: solid 2px var(--couleur-tertiaire); /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--couleur-primaire_transparent); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  font-family: 'Staatliches', cursive;
+  z-index: 2;
+}
+
+#myBtn:hover {
+  background-color: var(--couleur-secondaire); /* Add a dark-grey background on hover */
+}
+
+@font-face {
+  font-family:'kremlin';
+  src: url(../assets/fonts/kremlin.ttf) format('truetype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  background-color: var(--couleur-tertiaire);
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  font-family: 'Staatliches', cursive;
+  background-color: var(--couleur-tertiaire);
+  padding-top: 20px;
+}
+.contact_titre{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 34px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+  body{
+    background-color: var(--couleur-tertiaire);
+    overflow-x: hidden;
+    width: 100vw;
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100%;
+    font-family: 'Staatliches', cursive;
+    background-color: var(--couleur-tertiaire);
+    padding-top: 20px;
+  }
+}
+
+
+  
