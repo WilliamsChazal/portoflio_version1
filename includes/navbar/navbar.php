@@ -3,7 +3,8 @@
 <!-- Début Navabr  -->
 <div id="container">
     <nav class="navbar" id='navbar'>
-        <div class="navbar__title">   I Will Design</div>
+        <div><img src="assets/logo.svg" alt="" srcset="" class='logo'></div>
+        <div class="navbar__title">   Williams Chazal</div>
         <a  class="toggle-button" id="toggle__button">
             
             <span class="bar"></span>
