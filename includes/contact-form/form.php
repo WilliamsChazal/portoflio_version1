@@ -4,7 +4,7 @@ if (isset($_POST['user_mail'])&&!empty($_POST['user_mail']))/* permet de ne pas 
     $mail=$_POST['user_mail'];
     $msg=$_POST['user_message'];
 
-    $recipient = "ton.adresse@codeur.online";
+    $recipient = "wchazal26@gmail.com";
     $subject = "Formulaire";
 
     $message= 'Message envoyé par '.$mail.' : '.$msg;
@@ -17,10 +17,10 @@ if (isset($_POST['user_mail'])&&!empty($_POST['user_mail']))/* permet de ne pas 
     mail($recipient, $sujet, $message, implode("\r\n", $headerFields));
 
     echo 'Votre message a bien été transmis. Nous vous contacterons sous peu <br>';
-    echo '<button> <a href="index.php">retour</a> </button>';
+    echo '<button> <a href="../../index.php">retour</a> </button>';
 } else{
     echo 'Votre message n\'a pas été envoyé <br>';
-    echo '<button> <a href="index.php">retour</a> </button>';
+    echo '<button> <a href="../../index.php">retour</a> </button>';
 } 
 
 

@@ -1,5 +1,5 @@
 <div class="contact_form">
-<form action="form.php" method="post">
+<form action="includes/contact-form/form.php" method="post">
         <div>
             <label for="sujet" class='sujet'>Sujet :</label>
             <input type="text" id="sujet" name="user_sujet">
