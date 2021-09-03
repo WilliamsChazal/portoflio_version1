@@ -4,7 +4,7 @@ if (isset($_POST['user_mail'])&&!empty($_POST['user_mail']))/* permet de ne pas 
     $mail=$_POST['user_mail'];
     $msg=$_POST['user_message'];
 
-    $recipient = "wchazal26@gmail.com";
+    $recipient = "w.chazal@codeur.online.com";
     $subject = "Formulaire";
 
     $message= 'Message envoyé par '.$mail.' : '.$msg;
