@@ -7,7 +7,7 @@
        J’aime les gens passionnés et engagés dans leur travail. J’aime travailler avec eux et les accompagner dans leurs projets.<br>
       N'hésitez pas à télécharger mon Cv ou à me contacter pour plus d'informations sur mes prestations. 
        !</p>
-      <span class='about-me_cv'><button id='cv_button'>curriculum vitae</button></span>
+      <span class='about-me_cv'><a href="assets/cv-williams-chazal.pdf" download ><button id='cv_button'> curriculum vitae</button></a></span>
   </div>
   <div class="image_info"><img src="assets/images/photo.png" alt="Williams Chazal portrait" class="portrait_info"></div>
  

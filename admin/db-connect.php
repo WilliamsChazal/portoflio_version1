@@ -11,6 +11,18 @@ try {
     echo 'Error Connection : '.$e->getMessage();
 }
 
+/* $servername ='promo-68.codeur.online';
+$dbname ='williamsc_backoffice';
+$username ='williamsc';
+$password ='on3zxq186gb+nw==';
+try {
+    $db = new PDO("mysql:host=$servername; dbname=$dbname",$username, $password);
+    $db -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+} catch (PDOException $e) {
+    echo 'Error Connection : '.$e->getMessage();
+} */
+
 
 /* <?php
 $servername = 'localhost';
