@@ -48,7 +48,7 @@
 .navbar__title{
     font-size: 2.5rem;
     margin: .5rem;
-    margin-left: 1rem;
+/*     margin-left: 1rem; */
     font-family: 'kremlin';
     
 }
@@ -113,13 +113,15 @@
   }
 
 .logo{
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 @media  (max-width: 1024px) {
     .navbar__title{
         font-size: 2rem;
+        z-index: 99;
+        align-items: center;
     }
     .toggle-button{
         display:flex;
@@ -148,4 +150,7 @@
     .navbar__links.active{ 
         display:flex
     }
+.logo{
+display: none;
+}
 }

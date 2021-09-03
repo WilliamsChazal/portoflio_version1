@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="sections/landing/landing.css">
     <link rel="stylesheet" href="sections/skills/skills.css">
     <link rel="stylesheet" href="sections/projets/projets.css">
+    <link rel="stylesheet" href="includes/casse-brique/casse_brique.css">
     <link rel="stylesheet" href="sections/about-me/about-me.css">
     <link rel="stylesheet" href="includes/timeline/timeline.css">
     <link rel="stylesheet" href="includes/contact-form/style.css">  
