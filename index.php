@@ -36,17 +36,17 @@
             <div class='casse-brique'>
             <?php include ('includes/casse-brique/casse_brique.html')?>
             </div>
+            <div class='casse-brique-git'>
+                <a target='blank'href="https://github.com/WilliamsChazal/Casse-Brique"><img src="assets/images/github-logo.png" alt="" srcset="" id='casse-brique-git'></a>
+            </div>
             </section>
 
             <section class='contact' id="contact_ancre">
-            <div class="contact_titre"><h3>Contactez moi</h3></div>
-            <div class="contact_texte"><p>Pour en savoir plus sur mes réalisations ainsi que mes prestations n'hésiter pas à me contacter.<br>Je serais ravi de pouvoir travailler sur NOS futurs projets.</p></div>
-                 <div class="container_contact">
-                    <div class="storySet"><img src="assets/images/message.gif" alt="" srcset="<a href="https://storyset.com/">Illustrations by Storyset</a>"></div>
-                    <div class="form">
-                        <?php include ('includes/contact-form/index.php')?>
-                    </div>
-                 </div>
+                <div class="contact_titre"><h3>Contactez moi</h3></div>
+                <div class="contact_texte"><p>Pour en savoir plus sur mes réalisations ainsi que mes prestations n'hésiter pas à me contacter.<br>Je serais ravi de pouvoir travailler sur NOS futurs projets.</p></div>
+                <div class="form">
+                <?php include ('includes/contact-form/index.php')?>
+                </div>
             </section>
 
     <?php include ('includes/footer/footer.php')?>
@@ -57,7 +57,3 @@
 </body>
 </html>
 
-
-
-
-                
