@@ -2,13 +2,13 @@
 session_start();
 
 if($_SESSION['username']){
-    echo $_SESSION['success'];
     require_once('db-connect.php');
     $_sql = 'SELECT * FROM `projets`';
     $query = $db->prepare($_sql);
     $query ->execute();
     $result = $query->fetchALL(PDO::FETCH_ASSOC);
     /* var_dump($result); */
+
 }
 
 
@@ -24,6 +24,10 @@ if($_SESSION['username']){
     <title>Document</title>
 </head>
 <body>
+    <div>
+        <?php echo $_SESSION['success'];?>
+    </div>
+    <div>Bonjour <?php echo $_SESSION['username'];?> </div>
 <div class="admin_projet">
     <a href="add-form.php"><button>Ajouter un projet</button></a><br>
 

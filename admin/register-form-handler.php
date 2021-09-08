@@ -1,4 +1,6 @@
 <?php
+session_start();
+if($_SESSION['success']==='Connexion réussie'){
 
 if(isset($_POST['username'])&&!empty($_POST['username'])&&isset($_POST['email'])&&!empty($_POST['email'])&&isset($_POST['password'])&&!empty($_POST['password'])&&isset($_POST['confirmation'])&&!empty($_POST['confirmation'])){
 
@@ -30,6 +32,6 @@ if(isset($_POST['username'])&&!empty($_POST['username'])&&isset($_POST['email'])
 }else{
     echo 'Veuillez remplir tous les champs du formulaire';
 }
-
+}
 
 
